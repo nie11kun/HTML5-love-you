@@ -22,10 +22,6 @@
 </style>
 </head>
 <body>
-<audio id="pagemusic" autoplay="autopaly" loop="loop">
-  <source src="resource/music.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-</audio>
 <div id="main">
   <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(Chrome)或者火狐(Firefox)浏览器，或者其他游览器的最新版本。</div>
   <div id="wrap">
@@ -51,6 +47,7 @@
     <canvas id="canvas" width="1100" height="680"></canvas>
   </div>
 </div>
+/*
 <script>
     var audio = document.getElementById('pagemusic');
     audio.oncanplay = playmusic();
@@ -64,6 +61,7 @@
         });
     };
     </script>
+    */
 <script>
     (function(){
         var canvas = $('#canvas');
@@ -220,6 +218,10 @@
         runAsync().start();
     })();
     </script>
-
+    
+    <audio id="pagemusic" autoplay="autopaly" loop="loop">
+    <source src="resource/music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
 </body>
 </html>
