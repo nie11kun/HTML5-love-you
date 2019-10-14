@@ -45,21 +45,30 @@
         </div>
     </div>
 
-    <!--
-<script>
-    var audio = document.getElementById('pagemusic');
-    audio.oncanplay = playmusic();
-    var firsttaped = 0;
-    function playmusic(){
-        $('html').on('touchstart',function(){
-            if(firsttaped == 0){
-                audio.play();
-                firsttaped = 1;
-            }
-        });
-    };
+    <div style="text-align: center;">
+        <img id="image" src="resource/us.jpg" alt="" width="95%">
+    </div>
+
+    <div style="text-align: center;">
+        <audio id=" pagemusic" autoplay="autopaly" loop="loop">
+            <source src="resource/music.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        var audio = document.getElementById('pagemusic');
+        audio.oncanplay = playmusic();
+        var firsttaped = 0;
+        function playmusic(){
+            $('html').on('touchstart',function(){
+                if(firsttaped == 0){
+                    audio.play();
+                    firsttaped = 1;
+                }
+            });
+        };
     </script>
--->
 
     <script>
         (function () {
@@ -219,12 +228,6 @@
         })();
     </script>
 
-    <div style="text-align: center;"">
-    <audio id=" pagemusic" controls autoplay="autopaly" loop="loop">
-        <source src="resource/music.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-        </audio>
-    </div>
 </body>
 
 </html>
